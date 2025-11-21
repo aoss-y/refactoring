@@ -33,6 +33,12 @@ public class StatementPrinter {
         final StringBuilder result = new StringBuilder("Statement for "
                 + invoice.getCustomer()
                 + System.lineSeparator());
+        for (Performance p : invoice.getPerformances()) {
+            result.append(String.format("  %s: %s (%s seats)%n",
+                    getPlay(p).getName(),
+                    usd(getAmount(p)),
+                    p.getAudience()));
+        }
 
         result.append(String.format("Amount owed is %s%n",
                 usd(getTotalAmount(result))));
@@ -43,11 +49,6 @@ public class StatementPrinter {
     private int getTotalAmount(StringBuilder result) {
         int out = 0;
         for (Performance p : invoice.getPerformances()) {
-            // print line for this order
-            result.append(String.format("  %s: %s (%s seats)%n",
-                    getPlay(p).getName(),
-                    usd(getAmount(p)),
-                    p.getAudience()));
             out += getAmount(p);
         }
         return out;
