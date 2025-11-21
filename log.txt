@@ -1,3 +1,4 @@
+a3fe002 Task 2.2 - Refactored volume credits.
 91978d6 That log file.
 8facae7 Task 2.1 - Refactored StatementPrinter
 55c5315 Task 1.2 - Commit a log.
