@@ -1,3 +1,5 @@
+8facae7 Task 2.1 - Refactored StatementPrinter
+55c5315 Task 1.2 - Commit a log.
 be5c198 Task 1.1 - CheckStyle changes.
 2b4f164 fixed tests for the not-for-credit tasks; parameter ordering and ensuring consistent line endings.
 ff5004e adding shortcut keys for Inline Variable (Re: Piazza question)
