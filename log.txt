@@ -1,3 +1,5 @@
+5d654e1 Quick Fix
+9c62fdd Task 2.4 - Refactored loops
 9c17b1b Task 2.3 - Refactored $USD formatting.
 a3fe002 Task 2.2 - Refactored volume credits.
 91978d6 That log file.
